@@ -29,3 +29,6 @@ def add_widget(request):
 class WidgetDelete(DeleteView):
     model = Widget
     success_url = '/'
+
+    def get(self, request, **kwargs):
+        return self.post(request, **kwargs)

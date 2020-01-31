@@ -31,16 +31,21 @@ table a {
     text-align: center;
 }
 
+h1 {
+    text-shadow: 0 2px 2px #ccc;
+}
+
 .bold {
     font-weight: bold;
 }
 
 .success {
     background-color: rgb(96, 218, 136);
+    box-shadow: 2px 3px 5px #ccc;
 }
 
-.error {
-    background-color: rgb(230, 90, 90);
+.max-wid {
+    width: 50vw;
 }
 
 footer {

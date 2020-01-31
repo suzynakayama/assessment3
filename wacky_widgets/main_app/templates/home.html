@@ -34,7 +34,9 @@
                         <tr>
                             <td>{{ widget.description }}</td>
                             <td>{{ widget.quantity }}</td>
-                            <td><a href="{% url 'delete_widget' widget.id %}">X</a></td>
+                            <td>
+                                <a href="{% url 'delete_widget' widget.id %}">X</a>
+                            </td>
                         </tr>
                         {% endfor %}
                         <tr class="bold">
@@ -46,7 +48,7 @@
             </table>
             {% else %}
             <h3>No Widget Exist</h3>
-            <hr />
+            <hr class="max-wid" />
             {% endif %}
             <br>
             <br>
